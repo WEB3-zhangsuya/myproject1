@@ -24,7 +24,7 @@ window.onload = function(){
       pic.src ="C:/Users/Administrator/Desktop/myMusic/images/"+pics[(Math.floor(Math.random()*4))];
       mname.innerHTML=this.firstElementChild.lastElementChild.innerText;
       pname.innerText=this.firstElementChild.firstElementChild.innerText;
-      playbtn.src="C:/Users/Administrator/Desktop/myMusic/images/暂停.png"
+      playbtn.src="images/暂停.png"
     };
   }
 
@@ -35,12 +35,12 @@ window.onload = function(){
  
         if (img == this.src) {
             music.pause();
-            this.src = "C:/Users/Administrator/Desktop/myMusic/images/播放.png";
+            this.src = "images/播放.png";
         }
         if (img == this.src) {
 
             music.play();
-            this.src = "C:/Users/Administrator/Desktop/myMusic/images/暂停.png";
+            this.src = "images/暂停.png";
         }
 
     };
@@ -55,8 +55,8 @@ window.onload = function(){
     }    
     music.src ="C:/Users/Administrator/Desktop/myMusic/"+ musics[i] + ".mp3";
     music.play(); 
-    playbtn.src = "C:/Users/Administrator/Desktop/myMusic/images/暂停.png";
-    pic.src ="C:/Users/Administrator/Desktop/myMusic/images/"+pics[(Math.floor(Math.random()*4))];
+    playbtn.src = "images/暂停.png";
+    pic.src ="images/"+pics[(Math.floor(Math.random()*4))];
     mname.innerHTML=musicos[i].firstElementChild.lastElementChild.innerText;
     pname.innerText=musicos[i].firstElementChild.firstElementChild.innerText;
   } 
