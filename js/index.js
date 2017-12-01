@@ -21,7 +21,7 @@ window.onload = function(){
       music.play();
       ctrlbtn.style.display = "block";
       cnt.style.marginBottom ="0.7rem";
-      pic.src ="C:/Users/Administrator/Desktop/myMusic/images/"+pics[(Math.floor(Math.random()*4))];
+      pic.src ="images/"+pics[(Math.floor(Math.random()*4))];
       mname.innerHTML=this.firstElementChild.lastElementChild.innerText;
       pname.innerText=this.firstElementChild.firstElementChild.innerText;
       playbtn.src="images/暂停.png"
@@ -53,7 +53,7 @@ window.onload = function(){
     }else{
       i++;
     }    
-    music.src ="C:/Users/Administrator/Desktop/myMusic/"+ musics[i] + ".mp3";
+    music.src =musics[i] + ".mp3";
     music.play(); 
     playbtn.src = "images/暂停.png";
     pic.src ="images/"+pics[(Math.floor(Math.random()*4))];
