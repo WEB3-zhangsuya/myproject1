@@ -23,12 +23,12 @@ window.onload = function(){
     
           if (img == this.src) {
               music.pause();
-              this.src = "C:/Users/Administrator/Desktop/myMusic/images/播放.png";
+              this.src = "images/播放.png";
           }
           if (img == this.src) {
     
               music.play();
-              this.src = "C:/Users/Administrator/Desktop/myMusic/images/暂停.png";
+              this.src = "images/暂停.png";
           }
     
       }; 
@@ -38,12 +38,12 @@ window.onload = function(){
         
               if (image == this.src) {
                   music.pause();
-                  this.src = "C:/Users/Administrator/Desktop/myMusic/images/play_play.png";
+                  this.src = "images/play_play.png";
               }
               if (image == this.src) {
         
                   music.play();
-                  this.src = "C:/Users/Administrator/Desktop/myMusic/images/play_pause.png";
+                  this.src = "images/play_pause.png";
               }
         
           };      
@@ -148,10 +148,10 @@ function getdata(data){
       music.src = $(this).find("a").attr("href");
       music.play();
       $("#ctrlbtn").show();
-      // pic.src ="C:/Users/Administrator/Desktop/myMusic/images/"+pics[(Math.floor(Math.random()*4))];
+      // pic.src ="pics[(Math.floor(Math.random()*4))];
       $("#mname").html($(this).find(".songname").html());
       $("#pname").html($(this).find(".singername").html());
-      $("#playbtn").attr("src","C:/Users/Administrator/Desktop/myMusic/images/暂停.png");
+      $("#playbtn").attr("src","images/暂停.png");
     });
   })
 
