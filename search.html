@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1">
+<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/index.css" />
+<link rel="stylesheet" href="css/search.css" />
+<!-- <script src="js/shipei.js"></script> -->
+<body>
+  <div class="all">
+    <!-- 头部开始 -->
+    <header class="top">
+      <div class="logo">
+        <div><img src="images/logo.png" /></div>
+        <div><h3>咪咕音乐</h3></div>
+      </div>
+      <div class="download" id="download">
+        <h3>下载咪咕</h3>
+      </div>
+      <div class="index-search">
+          <a href="search.html"></a>
+        <div><img src="images/搜索 (4).png"></div>
+      </div>
+    </header>
+    <!-- 头部结束 -->
+
+    <!-- 内容开始 -->
+    <section class="cnt" id="cnt">
+      <!-- 导航开始 -->
+      <div class="nav">
+          <a class="goback" href="javascript:history.go(-1)"></a>
+          <div class="searchTitle">搜索</div>
+      </div>
+
+          
+      <!-- 导航结束 -->
+
+      <!-- 内容开始 -->
+      <div class="content">
+        <div class="searchpart">
+          <input id="kw" class="searchurl" type="text" placeholder="歌手/歌名" />
+          <input id="searchbtn" type="button" value="搜索" />
+        </div>
+        <div class="hot">
+          <div class="hot-title">共有1396条结果</div>
+        </div>
+
+
+        <div id="musiclist"> 
+
+        </div>
+        <div id="loading" >
+          <img src="images/loading3.gif" />
+        </div>
+      </div>
+    </section>
+<!-- 内容结束 -->
+
+<!-- 底部开始 -->
+<footer id="ctrlbtn">
+  <div class="bot">
+      <div class="minfo" id="minfo">
+        <div class="pic">
+          <img src="images/pic1.jpg" id="pic" />
+        </div>
+        <div class="txt">
+          <p class="mname" id="mname">一眼千年</p>
+          <p class="pname" id="pname">那英</p>
+        </div>
+      </div>
+      <div class="mbtn">
+          <div class="play"><input type="image" src="images/暂停.png" id="playbtn"/></div>
+          <div class="next"><img src="images/下一首.png" id="nextbtn" /></div>
+          <div class="download"><img src="images/下载 (2).png" id="downbtn"  /></div>
+      </div>
+  </div>
+</footer>
+<!-- 底部结束 -->
+</div>
+<!-- 背景 -->
+<img src="" />
+<!-- 遮罩 -->
+<div class="black-cover" id="blackCover"></div>
+
+
+
+<!-- 下载弹框 -->
+<div class="downAlert" id="downAlert">
+    <h3>提示</h3>
+    <P>下载需要手机酷狗客户端支持。</P>
+    <input type="button" id="cancle" value="取消"class="cancel" /><input type="button" id="conform" value="在客户端下载" class="confirm" />
+</div>
+<!-- 下载弹框 -->
+<!-- 提示弹框 -->
+<div class="successAlert" id="successAlert">
+    <h3>提示</h3>
+    <P>恭喜您下载成功！</P>
+    <input type="button" id="yes" value="确定" class="confirm" />
+</div>
+<!-- 提示弹框 -->
+
+<!-- 单曲播放页 -->
+<div class="playPage" id="playPage">
+    <div class="bgCover" id="bgCover"></div>
+    <!-- 背景遮罩 -->
+    <img id="blur" src="images/timg (4).jpg" />  
+    <!-- 导航开始 -->
+      <div class="songnav">
+          <div class="back" id="back"></div>
+          <p class="songTitle" id="songTitle"></p>
+      </div>     
+      <!-- 导航结束 -->
+      <!-- 播放区 -->
+      <div class="playPic">
+        <div class="pic">
+            <img class="record" id="record" src="images/timg (4) - 副本.jpg" />
+        </div>
+      </div>
+      <div class="playLrc">
+        <p>Near, far, wherever you are</p>
+        <p>I believe that the heart does go on</p>
+        <!-- 此处添加p段落 -->
+      </div>
+      <div class="timeWrap">
+        <div class="timeshow">00:00</div>
+        <div class="progress-wrap">
+          <div class="progress-bar">
+            <div class="preview-progress"></div>
+            <div class="progress"><span></span></div>
+          </div>
+        </div>
+        <div class="timeshow">03:01</div>
+      </div>
+      <div class="control">
+          <div class="play_prev"></div>
+          <div class="play_btn" ><img id="bigplayBtn" src="images/play_pause.png" /></div>
+          <div class="play_next"></div>
+      </div>
+      <div class="downBtn">
+        <input type="button" value="下载这首歌" />
+      </div>      
+      <!-- 播放区 -->
+    </div>
+    
+    <!-- 单曲播放页 -->
+</body>
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/search.js"></script>
+<!-- <script>
+  window.onload = function(){
+  download.onclick = function(){
+    alert("下载成功！")
+  }
+  downbtn.onclick = function(){
+    blackCover.style.display = "block";
+    downAlert.style.display = "block";
+  }
+  cancle.onclick = function(){
+    blackCover.style.display = "none";
+    downAlert.style.display = "none"; 
+  }
+  conform.onclick = function(){
+    // blackCover.style.display = "none";
+    downAlert.style.display = "none";
+    successAlert.style.display = "block";
+  }
+  yes.onclick = function(){
+    blackCover.style.display = "none";
+    downAlert.style.display = "none";
+    successAlert.style.display = "none";
+  }
+  var loadbtns = document.getElementsByClassName("loadbtn");
+    for(var j=0;j<loadbtns.length;j++){
+      loadbtns[j].onclick = function(){
+      // alert(1);
+      blackCover.style.display = "block";
+      downAlert.style.display = "block";
+    };
+}
+}
+</script> -->
+
+
+
