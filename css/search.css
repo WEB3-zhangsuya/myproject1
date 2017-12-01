@@ -1,25 +1,25 @@
 ::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: #ccc; opacity:1; font-size: .4rem;
+    color: #ccc; opacity:1; font-size: .8rem;
   }
 
   ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: #ccc;opacity:1;font-size: .4rem;
+    color: #ccc;opacity:1;font-size: .8rem;
   }
 
   input:-ms-input-placeholder{
-    color: #ccc;opacity:1;font-size: .4rem;
+    color: #ccc;opacity:1;font-size: .8rem;
   }
 
   input::-webkit-input-placeholder{
-       color: #ccc;opacity:1;font-size: .4rem;
+       color: #ccc;opacity:1;font-size: .8rem;
   }
 
 /* 导航开始 */
 .cnt .nav{
     z-index: 100;
     position: relative;
-    margin-top: 1.5rem;
-    height:1.5rem;
+    margin-top: 3rem;
+    height:3rem;
     display:flex;
     justify-content:center;
     align-items:center;  
@@ -28,22 +28,22 @@
     left:0px;
     top:0px;
     width:100%;
-    padding: 0 1rem;
+    padding: 0 2rem;
     box-sizing: border-box;
     /* border-bottom: 3px solid #f2f2f2; */
     box-shadow: 0 3px 3px rgba(235, 235, 235,.8);
     background:#ffffff url("../images/返回 (2).png") no-repeat .2rem center;
-    background-size: .6rem;
+    background-size: 1.2rem;
   }
   .cnt .nav .searchTitle{
-    height:1.5rem;
-    line-height: 1.5rem;   
-    font-size: .5rem;
+    height:3rem;
+    line-height: 3rem;   
+    font-size: 1rem;
   }
   .cnt .nav .goback{
       display: block;
-      height: 1.5rem;
-      width: 1rem;
+      height:3rem;
+      width: 2rem;
       /* border: 1px solid red; */
       position: absolute;
       left: 0;
@@ -51,32 +51,33 @@
 /* 导航结束 */
 /* 内容开始 */
 .content{
-    margin-top: 3rem;
+    margin-top: 6rem;
 }
 /* 搜索开始 */
 .content .searchpart{
     width: 100%;
-    height: 1.5rem;
-    line-height: 1.5rem;
+    height: 3rem;
+    line-height: 3rem;
     background: #fbfbfb;
     text-align: center;
 }
 .searchurl{
     width: 60%;
-    padding:.2rem 0;
-    padding-left: .85rem;
+    padding:.4rem 0;
+    padding-left: 1.6rem;
     border: 1px solid #e5e5e5;
     border-radius: 5px;
-    background:white url("../images/搜索 (5).png") no-repeat .15rem center;
-    background-size: .6rem;
-    margin-right: .2rem;
+    background:white url("../images/搜索 (5).png") no-repeat .3rem center;
+    background-size: 1.2rem;
+    margin-right: .4rem;
 }
 #searchbtn{
-    padding:.15rem .5rem;
-    border: 1px solid #e5e5e5;
-    border-radius: 5px;
+    padding:.6rem 1rem;
+    border: none;
+    background: #dfdfdf;
+    border-radius: 3px;
     color: #999;
-    font-size: .4rem;
+    font-size: .8rem;
 }
 
 /* 音乐列表开始 */
@@ -89,30 +90,30 @@
     border-bottom: 2px solid #e9e9e9;    
 } */
 .hot{
-    height: .8rem;
-    line-height: .8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
     color: #999;
-    font-size: .35rem;
-    padding-left: .4rem;
+    font-size: .7rem;
+    padding-left: .8rem;
     background:  #e9e9e9;    
 }
 .music{
     width: 100%;
     position: relative;
     /* margin-top: 4.5rem; */
-    height:2rem;
+    height:4rem;
     display:flex;
     justify-content:space-between;
     align-items:center;  
     vertical-align: middle;
     color:#555;
     width:100%;
-    padding-right:  1.2rem ;
-    padding-left: .4rem;
+    padding-right:  2.4rem ;
+    padding-left: .8rem;
     box-sizing: border-box;
     border-bottom: 1px solid #e9e9e9;
     background:#ffffff url("../images/下载.png") no-repeat 98% center;
-    background-size: .8rem;
+    background-size: 1.6rem;
   }
 .music .filename{
     /* display: flex;
@@ -121,12 +122,12 @@
     /* width: 88%; */
     /* height:.6rem;
     line-height: .6rem;    */
-    font-size: .4rem;
+    font-size: .8rem;
   }
 .music .download{    
       display: block;
-      height: 1.5rem;
-      width: 1.1rem;
+      height: 3rem;
+      width: 2.2rem;
       /* border: 1px solid red; */
       position: absolute;
       right: 0;
@@ -134,7 +135,7 @@
 /* 内容结束 */
 /* 加载开始 */
 #loading{
-    height: 1.4rem;
+    height: 2.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,7 +144,7 @@
     display: none;
 }
 #loading img{
-    width: 10rem;
+    width: 20rem;
     /* margin-top: .2rem; */
 }
 /* 加载结束 */
@@ -182,8 +183,8 @@
 .songnav{
     z-index: 120;
     position: relative;
-    margin-top: 1.5rem;
-    height:1.5rem;
+    margin-top: 3rem;
+    height:3rem;
     display:flex;
     justify-content:center;
     align-items:center;  
@@ -192,27 +193,27 @@
     left:0px;
     top:0px;
     width:100%;
-    padding: 0 1rem;
+    padding: 0 2rem;
     box-sizing: border-box;
     /* border: 1px solid red; */
 
-    background: url("../images/返回 (3).png") no-repeat .2rem center;
-    background-size: .6rem;
+    background: url("../images/返回 (3).png") no-repeat .4rem center;
+    background-size: 1.2rem;
   }
 .songnav .songTitle{
-    width: 5rem;
+    width: 10rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    height:1.5rem;
-    line-height: 1.5rem;   
-    font-size: .5rem;
+    height:3rem;
+    line-height: 3rem;   
+    font-size: 1rem;
     color: white;
   }
 .songnav .back{
       display: block;
-      height: 1.5rem;
-      width: 1rem;
+      height: 3rem;
+      width: 2rem;
       /* border: 1px solid red; */
       position: absolute;
       left: 0;
@@ -226,16 +227,16 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 5rem;
+    height: 10rem;
     left: 0;
-    top: 3.5rem;
+    top: 7rem;
     /* border: 1px solid red; */
 }
 .playPic .pic{
 
     overflow: hidden;
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
     /* border-radius: 50%; */
     /* border: 1px solid red; */
 }
@@ -246,8 +247,8 @@
     }
     
 .record{
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     transform: rotate(360deg);
     animation: rotation 3s linear infinite;
@@ -257,16 +258,16 @@
     z-index: 130;
     width: 100%;
     position: relative;
-    top: 8.5rem; 
+    top: 17rem; 
     width: 100%;
     text-align: center;
-    height:2rem; 
+    height:4rem; 
 
     /* border: 1px solid red; */
 }
 .playLrc p{
-    height: 1rem;
-    font-size: .45rem;
+    height: 2rem;
+    font-size: .9rem;
     flex-direction: column; 
 }
 .playLrc p:first-child{
@@ -283,10 +284,10 @@
     align-items: center;
     position: absolute;
     left: 0;
-    top: 11rem; 
+    top: 22rem; 
     width: 100%;
-    height:1rem;
-    padding: .3rem;
+    height:2rem;
+    padding: .6rem;
     box-sizing: border-box; 
     /* border: 1px solid red;    */
 }
@@ -297,15 +298,15 @@
 .timeshow{
     display: flex;
     align-items: flex-end;
-    margin-left: .1rem;
+    margin-left: .2rem;
 }
 .progress-wrap{
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 8;
-    height: .093rem;
-    margin: 0 .3rem;
+    height: .2rem;
+    margin: 0 .6rem;
     background: #6c6b70;
     position: relative;
     z-index: 130
@@ -326,9 +327,9 @@
     position: absolute;
     top: 50%;
     /* right: -.4rem; */
-    margin-top: -.15rem;
-    width: .3rem;
-    height: .3rem;
+    margin-top: -.3rem;
+    width: .6rem;
+    height: .6rem;
     display: block;
     border-radius: 100%;
 }
@@ -347,10 +348,10 @@
     display: flex;
     position: absolute;
     left: 0;
-    top: 12rem; 
+    top: 24rem; 
     width: 70%;
     left: 15%;
-    height:2rem; 
+    height:4rem; 
     /* border: 1px solid red;    */
 }
 .control div{
@@ -359,7 +360,7 @@
 }
 .play_prev{
     background: url(../images/play_prev.png) no-repeat center center;
-    background-size: 1.2rem;
+    background-size: 2.4rem;
 }
 .play_btn{
     display: flex;
@@ -375,7 +376,7 @@
 } */
 .play_next{
     background: url(../images/play_next.png) no-repeat center center;
-    background-size: 1.2rem;
+    background-size: 2.4rem;
 }
 .downBtn{
     z-index: 130;
@@ -384,17 +385,17 @@
     align-items: center;
     position: absolute;
     left: 0;
-    top: 14.2rem; 
+    top: 28.4rem; 
     width: 100%;
     height:2rem; 
     /* border: 1px solid red;    */
 }
 .downBtn input{
     color: white;
-    font-size: .45rem;
+    font-size: .9rem;
     background: linear-gradient(to right,rgb(255, 10, 214),rgb(214, 10, 255));
     border: none;
-    padding: .3rem 1.5rem;
+    padding: .6rem 3rem;
     border-radius: 10px;
 }
 /* 播放页结束 */
@@ -404,7 +405,7 @@
 .successAlert{
     z-index: 111;
     display: none; 
-    font-size: .45rem;   
+    font-size: .9rem;   
     color:#333;
     position: fixed;
     left:10%;
@@ -416,13 +417,13 @@
     margin:0px auto;
   }
   .successAlert h3{
-    font-size: .45rem;
+    font-size: .9rem;
     text-align: center;
     padding: 0 5%;
     padding-top: 5%;
   }
   .successAlert p{
-    font-size: .45rem;
+    font-size: .9rem;
     text-align: center;
     padding: 0 5%;
     padding-top: 1%;
@@ -432,13 +433,13 @@
   .successAlert input{
     background: rgb(255, 255, 255);
     border:none;    
-    height:1.25rem;
-    line-height:1.25rem;
+    height:2.5rem;
+    line-height:2.5rem;
     text-align: center;
   }
 
   .successAlert .confirm{
-    font-size: .45rem;
+    font-size: .9rem;
     width:100%;
     color:rgb(247, 16, 255);
     border-radius: 0 0 10px 10px;
